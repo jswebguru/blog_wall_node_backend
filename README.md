@@ -1,22 +1,61 @@
-### Date created
-Include the date you created this project and README file.
+# Wall App backend
 
-### Project Title
-Replace the Project Title
+Rest apis for wall app frontend
 
-### Description
-Describe what your project is about and what it does
+## Project Setup
 
-### Files used
-Include the files used
+### Project stack:
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+- Node, Express
+- MongoDB
+- Mocha & Chai
 
-### Updates
-This file was updated one time.
-This file was updated two times.
-This file was updated three times.
+### Prerequisites
 
-### Changes
-This file was changed
+```
+node v8^
+npm
+yarn
+```
+
+### Install and Run in Local
+
+Note: Use `yarn` rather than `npm`
+
+Install dependencies
+
+```
+npm install
+```
+
+```
+npm run dev
+```
+
+### Add `.env` file
+
+Refer `.env.example` file for local environment
+
+```
+NODE_ENV=development
+PORT=5000
+JWT_SECRET=SECRET
+JWT_EXPIRE_MINUTES=1440
+MONGO_URI=mongodb://localhost:27017/wall_app
+MONGO_URI_DEV=mongodb://localhost:27017/wall_app_dev
+APP_NAME=Wall App
+```
+
+## Running unit tests
+
+- Unit test with mocha/chai
+
+```
+npm run test
+```
+
+## Authors
+
+## License
+
+MIT
